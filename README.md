@@ -27,6 +27,6 @@ E:\xampp\htdocs\mywebsite
 + Now switch to the admin account
 + When the admin accesses, the admin will successfully self-direct and get the admin cookie
 + Use add-on on your browser to access when you know the admin cookie
-+ Login as admin successfully (No need to know password)
++ Login as admin successfully (Don't need to know password)
 
 # Note: To use cookie exploited from the victim, each browser must install the cookie tool (add-on) depending on the extendtions of each browser.
