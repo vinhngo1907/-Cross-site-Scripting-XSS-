@@ -28,4 +28,4 @@ E: \ xampp \ htdocs \ mywebsite
 + Use add-on on your browser to access when you know the admin cookie
 + Login as admin successfully (No need to know password)
 
-#Note: To use cookie exploited from the victim, each browser must install the cookie tool (add-on) depending on the extendtions of each browser.
+# Note: To use cookie exploited from the victim, each browser must install the cookie tool (add-on) depending on the extendtions of each browser.
