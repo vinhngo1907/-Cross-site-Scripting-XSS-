@@ -1,0 +1,2 @@
+
+http://localhost/dvwa/vulnerabilities/xss_s/. Cookie la: security=low; PHPSESSID=271igia70eb3qms9hq6rkv0uvp 
